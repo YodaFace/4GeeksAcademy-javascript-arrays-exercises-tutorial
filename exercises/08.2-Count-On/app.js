@@ -4,6 +4,13 @@ let hello = [];
 for(let index = 0; index < myArray.length; index++){
     let element = myArray[index];
     // MAGIC HAPPENS HERE
+    // console.log(element)
+    if (typeof element === 'object') {
+        hello.push(element);
+        // fruits.push("Kiwi");
+
+    }
+    // if index.type
 }
 
 console.log(hello)

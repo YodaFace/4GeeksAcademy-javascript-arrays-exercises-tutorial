@@ -10,3 +10,9 @@ let tasks = [
 ];
 
 //your code here
+
+let isDone = tasks.filter( item => item.done == true )
+
+// item, index, array 
+
+console.log(isDone)

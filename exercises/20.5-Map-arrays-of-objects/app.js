@@ -6,8 +6,16 @@ let people = [
 	{ name: 'Steve', birthDate: new Date(2003,4,24) }
 ];
 
-let simplifier = function(person){
-	return person.name;
-};
+let today = new Date();
+
+let simplifier = (function(person){
+
+    let age = today.getFullYear() - person.birthDate.getFullYear()
+    if ( today.getMonth() <= person.birthDate.getMonth()){
+        age = age - 1;
+    }
+    return `Hello, my name is ${person.name} and I am ${age} years old`
+});
 
 console.log(people.map(simplifier));
+

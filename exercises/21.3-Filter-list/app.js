@@ -2,4 +2,9 @@ let names = ['Liam','Emma','Noah','Olivia','William','Ava','James','Isabella','L
 
 //declare your function here
 
+const filterByName = (anyArray, checkWhat) => anyArray.filter(function (key) {
+    if (key.includes(checkWhat))
+        return key; 
+})
+
 console.log(filterByName(names, 'am'));
